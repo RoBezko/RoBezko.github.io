@@ -1,19 +1,50 @@
 .font {
     font-family: sans-serif;
     font-weight: 700;
-    margin: 5px 0 0 0;
+    margin: 1px 0;
+    line-height: 1.5;
 }
 
 .imgCrcl {
+    border-style: solid;
     border-radius: 50%;
     margin-right: 20px;
 }
 
-.container {
+.smallImg {
+    position: absolute;
+    top: 230px; /* Pos img */
+    right: 1580px; /* Pos img */
+    border-radius: 50%;
+}
+
+.containerOfMe {
+    position: relative;
     display: flex;
     align-items: center;
 }
 
 .text-content {
-    max-width: 500px;
+    max-width: 300px;
+}
+
+.links {
+    border-radius: 50%;
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .smallImg {
+        position: static; 
+        margin-top: 10px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
 }
