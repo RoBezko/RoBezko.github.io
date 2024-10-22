@@ -1,3 +1,10 @@
-h1 {
-    font-style: italic;
+.font {
+    font-family: sans-serif;
+    font-weight: 700;
+
+    margin: 5px 0 0 0;
+}
+
+.imgCrcl {
+    border-radius: 200;
 }
