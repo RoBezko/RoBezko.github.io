@@ -1,10 +1,19 @@
 .font {
     font-family: sans-serif;
     font-weight: 700;
-
     margin: 5px 0 0 0;
 }
 
 .imgCrcl {
-    border-radius: 200;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.text-content {
+    max-width: 500px;
 }
