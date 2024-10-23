@@ -23,8 +23,8 @@
 
 .smallImg {
     position: absolute;
-    top: 82%; /* Moves the small image down relative to the big image */
-    left: 75%; /* Moves it to the right side of the big image */
+    top: 71%; /* lower number goes up, bigger number goes down */
+    left: 67%; /* lower number goes left, bigger number goes right */
     border-radius: 50%;
 }
 
