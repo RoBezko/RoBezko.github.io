@@ -5,6 +5,11 @@
     line-height: 1.5;
 }
 
+.newlink {
+    color: white;
+    font-style: oblique;
+}
+
 .imgCrcl {
     border-style: solid;
     border-radius: 50%;
