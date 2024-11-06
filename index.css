@@ -207,6 +207,15 @@
   height: 48px;
   position: absolute;
 }
+
+.mainframe-RNGbutton {
+  top: 0px;
+  right: 200px;
+  width: 97px;
+  height: 86px;
+  position: absolute;
+}
+
 .mainframe-text22 {
   top: 61px;
   left: 621px;
