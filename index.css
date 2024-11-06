@@ -168,6 +168,14 @@
   flex-shrink: 0;
   background-color: rgba(23, 23, 23, 1);
 }
+
+.ver {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 85%;
+  text-align: right;
+}
+
 .mainframe-rk-opixelsprite {
   top: 23px;
   left: 815px;
