@@ -93,6 +93,7 @@
                 alt="Mainpfp"
                 src="public/external/mainpfp14-zs-300h.png"
                 class="mainframe-mainpfp"
+                id="Mainpfp"
               />
               <img
                 alt="smallpfp"
@@ -213,6 +214,21 @@
     });
 
     </script>
+
+<script>
+  function replaceImage() {
+      const randomChance = Math.floor(Math.random() * 100) + 1;
+
+      // Check if the random number is 1 (1% chance)
+      if (randomChance === 1) {
+          const mainImage = document.getElementById('Mainpfp');
+          mainImage.src = "public/external/NLTAS.png"; 
+          mainImage.alt = "Never lie to a sigma"; 
+      }
+  }
+
+  window.onload = replaceImage;
+</script>
 
   </body>
 </html>
