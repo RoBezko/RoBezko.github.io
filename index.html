@@ -101,7 +101,7 @@
               />
             </div>
           </div>
-          <div class="mainframe-footer">
+          <footer class="mainframe-footer">
             <img
               alt="RKOpixelsprite"
               src="public/external/RKO pixel sprite.gif"
@@ -142,13 +142,17 @@
               <a href="https://rkoz.site/RNGbutton/" target="_blank">
                 <img src="public/external/RNGbutton.png" alt="RNGbutton" class="mainframe-RNGbutton">
               </a>
+
+              <a class="random-s-button" id="randomSiteButton">
+                <img src="public/external/RandoSite.png" alt="Random site Button" class="random-s-button">
+              </a>
             </button>
             
             <div class="ver">
               <p>version:</p> <p id="verNum">text</p>
             </div>
 
-          </div>
+          </footer>
           <div class="mainframe-aboutme">
             <span class="mainframe-text26"><span>ABOUT ME</span></span>
             <span class="mainframe-text28">
@@ -172,6 +176,25 @@
           document.getElementById('verNum').innerText = package.version;
         })
         .catch(error => console.error('Error fetching the JSON file:', error));
+    </script>
+
+    <script>
+      // random site gen stuff
+
+      // the actual website list
+      const sites = [
+      "https://github.com/RoBezko/RoBezko.github.io",
+      "https://google.com",
+      "https://www.half-life.com/en/home/",
+      "https://roblox.com",
+    ];
+
+    document.getElementById("randomSiteButton").addEventListener("click", function (event) {
+      event.preventDefault();
+      const randomSite = sites[Math.floor(Math.random() * sites.length)];
+      window.location.href = randomSite;
+    });
+
     </script>
 
   </body>
