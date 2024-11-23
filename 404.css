@@ -1,3 +1,8 @@
+body {
+  background-color: black;
+  color: white;
+}
+
 .not-found-container1 {
   width: 100%;
   display: flex;
