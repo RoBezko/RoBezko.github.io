@@ -208,6 +208,15 @@
   position: absolute;
 }
 
+.mainframe-github {
+  top: -3px;
+  left: 138px;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+}
+
+
 .mainframe-RNGbutton {
   top: 0px;
   right: 200px;
