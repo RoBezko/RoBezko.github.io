@@ -175,7 +175,7 @@
     </div>
 
     <script>
-      // Fetch the JSON file and replace the paragraph text
+      // version changer
       fetch('package.json')
         .then(response => response.json())
         .then(package => {
@@ -222,7 +222,7 @@
 
 <script>
   function replaceImage() {
-      const randomChance = Math.floor(Math.random() * 100) + 1;
+      const randomChance = Math.floor(Math.random() * 20) + 1;
 
       // Check if the random number is 1 (1% chance)
       if (randomChance === 1) {
