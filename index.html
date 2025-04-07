@@ -5,21 +5,18 @@
     <link rel="icon" href="favicon.ico" type="img/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Add this CSS for initial hidden state and transitions */
         .stuff {
             display: none;
             opacity: 0;
-            transition: opacity 0.3s ease-in-out; /* Removed 'display' from transition */
-            /* height: 0;  Remove height transition*/
+            transition: opacity 0.3s ease-in-out;
             overflow: hidden;
         }
         .stuff.visible {
-            display: flex; /* Changed to flex, or whatever display you need */
+            display: flex;
             opacity: 1;
-            /* height: auto; Remove height*/
         }
         .navbar a {
-            cursor: pointer; /* Ensure the navbar link looks clickable */
+            cursor: pointer;
         }
 
         .social-links {
@@ -39,14 +36,14 @@
             border-radius: 5px;
         }
         .social-links.visible {
-            display: flex; /* changed to flex */
+            display: flex;
             opacity: 1;
-            /* height: auto; Remove height*/
         }
         .social-links a img {
-            margin: 5px; /* Added vertical margin */
+            margin: 5px; 
             background-color: #333;
             border-radius: 5px;
+            transition: 0.3s;
         }
         .social-links img {
             width: 80px;
