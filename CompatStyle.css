@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+    *{
+        width: auto;
+        height: auto;
+    }
+
+  .stuff, .social-links {
+    width: 70%;
+    padding: 0 10px;
+    justify-content: center;
+    left: 0;
+  }
+  
+  .header{
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #333;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    position: sticky;
+    left: 0;
+    text-align: left;
+  }
+  
+  .Frow .video {
+    max-width: 70%;
+    height: auto;
+    left: 0;
+  }
+
+    .Frow .video iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .Frow .boutMe {
+        width: 50%;
+        height: auto;
+        left: 0;
+    }
+
+  footer{
+    left: 0;
+    width: 80%;
+  }
+    
+}
