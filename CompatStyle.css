@@ -1,11 +1,15 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     *{
         width: auto;
         height: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
   .stuff, .social-links {
     width: 70%;
+    height: auto;
     padding: 0 10px;
     justify-content: center;
     left: 0;
@@ -14,6 +18,12 @@
   .header{
     font-size: 14px;
     text-align: center;
+  }
+
+  .header img{
+    width: 7%;
+    height: auto;
+    left: 0;
   }
   
   .navbar {
@@ -28,6 +38,12 @@
     position: sticky;
     left: 0;
     text-align: left;
+  }
+
+  .Frow {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 5px;
   }
   
   .Frow .video {
@@ -52,4 +68,48 @@
     width: 80%;
   }
     
+}
+
+@media screen and (max-width: 800px) {
+    .stuff, .social-links {
+        width: 80%;
+        height: auto;
+        padding: 0 10px;
+        justify-content: center;
+        left: 0;
+    }
+
+    .header img{
+        width: 10%;
+        height: auto;
+        left: 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .Frow {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 10px;
+    }
+    
+    .Frow .video {
+        max-width: 80%;
+        height: auto;
+        left: 0;
+    }
+
+    .Frow .video iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .Frow .boutMe {
+        width: 70%;
+        height: auto;
+        left: 0;
+    }
+  
 }

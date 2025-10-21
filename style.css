@@ -108,12 +108,22 @@ body {
     transition: 0.3s;
 }
 
+.Frow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+
 
 .video {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
     float: left;
     margin-top: 20px;
     left: 19%;
@@ -145,6 +155,39 @@ body {
     transition: 0.3s;
 }
 
+.video a {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+
+    justify-content: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 5px;
+    border: #0080FF 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0080ff4b;
+
+}
+
+.video a img {
+    width: 40px;
+    height: 40px;
+}
+
+.video a:hover {
+    background-color: #0080ff7a;
+    transition: 0.3s;
+}
+
 .boutMe {
     display: flex;
     flex-direction: column;
@@ -158,7 +201,6 @@ body {
     opacity: 0.9;
 
     top: 20px;
-    left: 400px;
 
     transition: 0.3s;
 }
