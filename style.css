@@ -1,220 +1,205 @@
-html {
-    scroll-behavior: smooth;
-    flex-direction: column;
+:root {
+    --background-color: black;
+    --Darker-color: #222;
+    --Dark-color: #333;
+    --Light-color: #666;
+    --Lighter-color: #999;
+    --text-color: white;
+    --legacy-color: #e9d308;
 }
+
+@font-face {
+  font-family: Main;
+  src: url(items/Clickuper.ttf);
+}
+
+@font-face {
+  font-family: lesserFont;
+  src: url(items/mania.ttf);
+}
+
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Main;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
 }
-.header {
-    background-color: #333;
-    color: white;
+
+header {
+    background-color: var(--Dark-color);
+    padding: 20px;
     text-align: center;
-    padding: 15px;
+    border-bottom: 2px solid var(--Lighter-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 50%;
+    margin: 10px auto 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+main section.top {
+    font-family: lesserFont;
+    display: flex;
+    width: 700px;
+    background-color: var(--Dark-color);
+    border-bottom: 2px solid var(--Lighter-color);
+    border-radius: 10px;
+
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 30px;
+}
+main section.top em {
+    margin-top: auto; margin-bottom: auto; margin-left: 20px; margin-right: auto;
+}
+
+main section.top-right {
+    font-family: lesserFont;
+    display: flexbox;
+    width: 450px;
+    background-color: var(--Dark-color);
+    border-bottom: 2px solid var(--Lighter-color);
+    border-radius: 10px;
+    margin-left: 50px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.top-right div.buttonHold {
+    display: flex;
+}
+
+main section.top-right div.buttonHold div.button {
+    background-color: #666;
+    width: 90px; height: 90px;
     margin: auto;
-    height: 100px;
-    display: flex;
-    position: sticky;
-    border-radius: 5px;
-    opacity: 0.9;
-    transition: 0.3s;
-}
-
-.header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.header h1 {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    width: 600px;
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-content: center;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.navbar a {
-    float: right;
-    display: block;
-    color: white;
-    border: white 1px solid;
-    border-radius: 5px;
-    text-align: center;
-    padding: 14px 20px;
-    margin: 5px;
-    text-decoration: none;
-}
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-    transition: 0.3s;
-}
-.navbar a:active {
-    background-color: #666;
-    border-color: #666;
-    color: white;
-    transition: 0.3s;
-}
-
-.stuff {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    background-color: #222;
-    border-radius: 5px;
-    width: 1200px;
-    height: 100px;
-    opacity: 0.9;
-    transition: 0.3s;
-}
-
-
-.stuff a img {
-    width: 80px;
-    height: 80px;
-    background-color: #333;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    transition: 0.3s;
-}
-.stuff a img:hover {
-    opacity: 0.8;
-    border-radius: 30%;
-    background-color: #666;
-    transition: 0.3s;
-}
-.stuff a img:active {
-    opacity: 0.6;
-    border-radius: 40%;
-    background-color: #999;
-    transition: 0.3s;
-}
-
-.Frow {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    margin: 20px auto;
-    width: 100%;
-}
-
-
-
-.video {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
-    float: left;
-    margin-top: 20px;
-    left: 19%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    background-color: #222;
-    border-radius: 5px;
-    width: 600px;
-    height: 410px;
-    opacity: 0.9;
-    transition: 0.3s;
-}
-.video iframe {
-    width: 560px;
-    height: 315px;
-    border-radius: 5px;
-    margin: 20px;
-    transition: 0.3s;
-}
-.video iframe:hover {
-    border-radius: 5%;
-    transition: 0.3s;
-}
-.video h1 {
-    margin-top: 5px;
-    margin-bottom: auto;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.video a {
-    margin-bottom: 20px;
-    margin-left: 20px;
-    text-align: center;
-    font-size: large;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-
-    justify-content: center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    gap: 5px;
-    border: #0080FF 1px solid;
     padding: 5px;
-    border-radius: 5px;
-    background-color: #0080ff4b;
-
+    border-radius: 10px;
+    transition: 0.2s;
 }
 
-.video a img {
-    width: 40px;
-    height: 40px;
+main section.top-right div.buttonHold div.button a {
+    text-decoration: none;
+    color: white;
 }
 
-.video a:hover {
-    background-color: #0080ff7a;
-    transition: 0.3s;
+main section.top-right div.buttonHold div.button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 
-.boutMe {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #222;
+main.part2 {
+    margin-top: 50px;
+}
+
+main.part2 section.YTembed {
+    display: flexbox;
+    font-size: larger;
+    width: 700px;
+    background-color: var(--Dark-color);
+    border-bottom: 2px solid var(--Lighter-color);
+    border-radius: 10px;
+
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    width: 400px;
-    height: 140px;
-    padding: 10px;
-    opacity: 0.9;
+    padding-top: 10px; padding-bottom: 20px;
+}
+main.part2 section.YTembed a {
+    font-family: lesserFont;
+    width: 250px; height: auto;
+    background-color: rgba(98, 0, 255, 0.486);
+    border-radius: 10px;
+    border: aqua 2px solid;
+    text-decoration: none;
+    color: azure;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
-    top: 20px;
+    margin-left: auto; margin-right: auto;
 
     transition: 0.3s;
+    transform: scale(1);
+}
+main.part2 section.YTembed a img {
+    width: 100px; height: auto;
 }
 
-.boutMe h1 {
+main.part2 section.YTembed a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+main.part2 section.bottom-right {
+    font-family: lesserFont;
+    display: flexbox;
+    width: 450px;
+    background-color: var(--Dark-color);
+    border-bottom: 2px solid var(--Lighter-color);
+    border-radius: 10px;
+    margin-left: 50px;
+    padding: auto;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main.part2 section.bottom-right div.buttonHold {
     margin-top: 10px;
-    margin-bottom: 5px;
-    text-align: left;
+    display: grid;
 }
 
-.boutMe p {
-    margin-top: 0;
-    text-align: left;
-    font-size: large;
+main.part2 section.bottom-right div.buttonHold a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+
+    width: 250px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+main.part2 section.bottom-right div.buttonHold a p {
+    margin-top: auto; margin-bottom: auto;
+}
+main.part2 section.bottom-right div.buttonHold a.normalButton {
+    background-color: #666;
+}
+main.part2 section.bottom-right div.buttonHold a.KobotButton {
+    background: #007BF6;
+    background: linear-gradient(90deg, rgba(0, 123, 246, 1) 0%, rgba(130, 82, 206, 1) 100%);
+}
+
+main.part2 section.bottom-right div.buttonHold a:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+section.seperator {
+    margin: 200px;
 }
 
 footer {

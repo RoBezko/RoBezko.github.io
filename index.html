@@ -1,182 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Rkoz</title>
-    <link rel="icon" href="favicon.ico" type="img/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKOZ</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="CompatStyle.css">
-    <style>
-        .stuff {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            overflow: hidden;
-        }
-        .stuff.visible {
-            display: flex;
-            opacity: 1;
-        }
-        .navbar a {
-            cursor: pointer;
-        }
-
-        .social-links {
-            display: none;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px; 
-            margin-left: auto;
-            margin-right: auto;
-            transition: opacity 0.3s ease-in-out;
-            width: 1200px;
-            height: 100px;
-            overflow: hidden;
-
-            background-color: #222;
-            border-radius: 5px;
-        }
-        .social-links.visible {
-            display: flex;
-            opacity: 1;
-        }
-        .social-links a img {
-            margin: 5px;
-            background-color: #333;
-            border-radius: 5px;
-        }
-        .social-links img {
-            width: 80px;
-            height: 80px;
-        }
-        .social-links a img:hover {
-            opacity: 0.8;
-            border-radius: 30%;
-            background-color: #666;
-            transition: 0.3s;
-        }
-        .stuff a img:active {
-            opacity: 0.6;
-            border-radius: 40%;
-            background-color: #999;
-            transition: 0.3s;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="CompatStyle.css"> -->
 </head>
 <body>
-    <div class="header">
-        <img src="items/Img/Largepfp.png" alt="Lpfp" style="justify-content: start;">
-        <h1>Rkoz.cc|<span>Dumbass site</span></h1>
-        <div class="navbar">
-            <a id="gimmicksButton">Gimmicks</a>
-        </div>
-    </div>
+    <header>
+        <h1>RKOZ.CC</h1>
+    </header>
 
-    <div class="stuff">
-        <a href="https://rkoz.cc/monkeyBA/">
-            <img src="items/Img/Monkey ba.png" alt="MonkeyBA">
-        </a>
-        <a href="https://rkoz.cc/siteProtos/">
-            <img src="items/Img/PrototypeS.png" alt="ProtoS">
-        </a>
-        <a href="https://rkoz.cc/RNGbutton/">
-            <img src="items/Img/RNGbutton.png" alt="RNGbutton">
-        </a>
-        <a id="randomSiteButton">
-            <img src="items/Img/RandoSite.png" alt="RandoSite">
-        </a>
-        <a href="https://rkoz.cc/Video">
-            <img src="items/Img/Videos.png" alt="Video">
-        </a>
-    </div>
+    <main>
+        <section class="top">
+            <img src="items/Img/Largepfp.png" alt="Mpfp">
+            <em>The le RoBezko site ig</em>
+        </section>
+        
+        <section class="top-right">
+            <h2>Socials</h2>
+            <div class="buttonHold">
+                <div class="button">
+                    <a href="https://bsky.app/profile/rkoz.cc">
+                        <img src="items/Img/Bluesky.png" alt="Bsky" width="50">
+                        Bluesky
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="https://github.com/RoBezko">
+                        <img src="items/Img/Github.png" alt="Github" width="45">
+                        Github
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="https://youtube.com/@robezko">
+                        <img src="items/Img/youtube.png" alt="YouTube" width="50">
+                        YouTube
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="social-links">
-        <a href="https://www.youtube.com/@robezko" target="_blank">
-            <img src="items/Img/youtube.png" alt="YouTube">
-        </a>
-        <a href="https://twitter.com/@robezkoz" target="_blank">
-            <img src="items/Img/twitter.png" alt="Twitter">
-        </a>
-        <a href="https://bsky.app/profile/rkoz.site" target="_blank">
-            <img src="items/Img/Bluesky.png" alt="bsky">
-        </a>
-        <a href="https://github.com/RoBezko" target="_blank">
-            <img src="items/Img/Github.png" alt="GitHub">
-        </a>
-    </div>
-
-    <div class="Frow">
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/orN1EtZd1Ko?si=X6Yevepeq7t1hr3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h1>Latest video</h1>
-            <a href="https://rkoz.cc/Video/RoBezko">
-                <img src="items/Img/Videos.png" alt="Vdpng">
-                <span>View More</span>
+    <main class="part2">
+        <section class="YTembed">
+            <b>LATEST VIDEO</b>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/orN1EtZd1Ko?si=IF37nPj1CSlfy3zv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <a href="https://rkoz.cc/Video/"> Watch more
+                <img src="items/Img/Videos.png" alt="VDO logo">
             </a>
-        </div>
-        <div class="boutMe">
-            <h1>About me</h1>
-            <p>[CENCORED FOR PRIVACY]</p>
-        </div>
-    </div>
+            
+        </section>
+
+        <section class="bottom-right">
+            <b>Other stuff on this website</b>
+            <div class="buttonHold">
+                <a href="https://rkoz.cc/monkeyBA/" class="normalButton">
+                    <img src="items/Img/Monkey ba.png" alt="Mba" width="100">
+                    <p>
+                        Monkey Before/After
+                    </p>
+                </a>
+                <a href="https://rkoz.cc/siteProtos/" class="normalButton">
+                    <img src="items/Img/PrototypeS.png" alt="Ps" width="100">
+                    <p>
+                        Site Proto's/Archives
+                    </p>
+                </a>
+                <a href="https://rkoz.cc/siteProtos/" class="normalButton">
+                    <img src="items/Img/RNGbutton.png" alt="RNGb" width="100">
+                    <p>
+                        RNG Button
+                    </p>
+                </a>
+                <a href="https://kobot.rkoz.cc/" class="KobotButton">
+                    <img src="items/Img/KoBot White.png" alt="RNGb" width="90">
+                    <p>
+                        KoBot Studios
+                    </p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="seperator">
+
+    </section>
 
     <footer>
-        <p>© 2012 Rkoz.site</p>
-        <img src="items/Img/RKO pixel sprite.gif" alt="Rko pixel" style="width: 200px; height: 80px;">
+        <img src="items/Img/RKO pixel sprite.gif" alt="rkoz" width="300px">
     </footer>
-
-    <script>
-        const gimmicksButton = document.getElementById("gimmicksButton");
-        const stuffElement = document.querySelector(".stuff");
-        const socialLinksElement = document.querySelector(".social-links");
-        let isStuffVisible = true;
-
-        // Initial state: Show the .stuff element, hide social links
-        stuffElement.classList.add('visible');
-        socialLinksElement.classList.remove('visible');
-        gimmicksButton.textContent = "Social's";
-
-        gimmicksButton.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            if (isStuffVisible) {
-                stuffElement.classList.remove('visible');
-                socialLinksElement.classList.add('visible');
-                gimmicksButton.textContent = "Gimmicks";
-            } else {
-                stuffElement.classList.add('visible');
-                socialLinksElement.classList.remove('visible');
-                gimmicksButton.textContent = "Social's";
-            }
-
-            isStuffVisible = !isStuffVisible;
-        });
-
-        // random site gen stuff
-        const sites = [
-            "https://github.com/RoBezko/RoBezko.github.io",
-            "https://google.com",
-            "https://www.half-life.com/en/home/",
-            "https://roblox.com",
-            "https://skibidi-toilet.fandom.com/wiki/Skibidi_Toilet_Wiki",
-            "https://skibidi-toilet.fandom.com/wiki/Skibidi_Toilet_Wiki",
-            "https://skibidi-toilet.fandom.com/wiki/Skibidi_Toilet_Wiki",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/uSu2QzlzVdY?si=es_U1mczds_JsmIx",
-            "https://youtu.be/YHNgSOHtxYc?si=9Sjzpwq8JNzTYq23",
-        ];
-
-        document.getElementById("randomSiteButton").addEventListener("click", function (event) {
-            event.preventDefault();
-            const randomSite = sites[Math.floor(Math.random() * sites.length)];
-            window.location.href = randomSite;
-        });
-    </script>
 </body>
 </html>
