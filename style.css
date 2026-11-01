@@ -52,6 +52,7 @@ main {
 
 main section.top {
     font-family: lesserFont;
+    position: relative;
     display: flex;
     width: 700px;
     background-color: var(--Dark-color);
@@ -64,7 +65,12 @@ main section.top {
     padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 30px;
 }
 main section.top em {
+    z-index: 1;
     margin-top: auto; margin-bottom: auto; margin-left: 20px; margin-right: auto;
+}
+main section.top img.Rmodel {
+    position: absolute;
+    right: 0px; bottom: 0px;
 }
 
 main section.top-right {
