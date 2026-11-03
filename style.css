@@ -117,7 +117,7 @@ main.part2 {
 main.part2 section.YTembed {
     display: flexbox;
     font-size: larger;
-    width: 700px;
+    width: 750px;
     background-color: var(--Dark-color);
     border-bottom: 2px solid var(--Lighter-color);
     border-radius: 10px;
@@ -192,7 +192,7 @@ main.part2 section.bottom-right div.buttonHold a p {
     margin-top: auto; margin-bottom: auto;
 }
 main.part2 section.bottom-right div.buttonHold a.normalButton {
-    background-color: #666;
+    background-color: var(--Light-color);
 }
 main.part2 section.bottom-right div.buttonHold a.KobotButton {
     background: #007BF6;
@@ -218,7 +218,7 @@ footer {
     bottom: 10px;
     width: clamp(300px, 50%, 900px);
     transform: translateX(-50%);
-    border-top: 2px solid var(--Lighter-color);
+    border-bottom: 2px solid var(--Lighter-color);
     border-radius: 10px;
     z-index: 100;
     box-sizing: border-box;
@@ -233,5 +233,6 @@ footer img {
 }
 footer p {
     margin: 2px 0 0 0;
+    font-family: lesserFont;
     font-size: 0.9em;
 }
